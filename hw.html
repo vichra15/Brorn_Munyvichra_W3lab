@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox Homework</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    padding: 0 3em;
+    height: 100vh;
+    background-color: #1b2a4a;
+  }
+
+  .left-section {
+    flex-grow: 1;
+    background-color: #a9d3cf;
+  }
+
+  .right-section {
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: #f2c9a0;
+  }
+
+  .item {
+    height: 100px;
+    background-color: #7ab8d9;
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <div class="left-section"></div>
+
+  <div class="right-section">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox Layout Exercise</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    padding: 50px;
+    background-color: rgb(34, 39, 3);
+  }
+
+  header {
+    height: 100px;
+    background-color: rgb(167, 186, 98);
+    color: white;
+  }
+
+  main {
+    flex-grow: 1;
+    background-color: rgb(220, 112, 112);
+    color: white;
+  }
+
+  footer {
+    height: 100px;
+    background-color: rgb(146, 194, 234);
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header>Header</header>
+  <main>Main Content</main>
+  <footer>Footer</footer>
+</div>
+
+</body>
+</html>

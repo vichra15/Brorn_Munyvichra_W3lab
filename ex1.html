@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 200px 200px 100px ;
+    grid-template-columns: 200px 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(158, 196, 229);
+.item {
+    background-color: rgb(105, 249, 201);
+    border-radius: 10px;
+}
+.item-a {
+    grid-column: 1/4;
+
+}
+.item-b {
+    grid-row: 2/4;
+
+}
+
+.item-e {
+    grid-column: 2/4;
+
+
+}
+
+
+.item-f {
+    grid-column: 1/4;
+
+
+}
+}
+</style>
+<body>
+<div class="grid-container">
+
+    <div class="item item-a">a</div>
+
+    <div class="item item-b">b</div>
+
+    <div class="item item-c">c</div>
+
+    <div class="item item-d">d</div>
+
+    <div class="item item-e">e</div>
+
+    <div class="item item-f">f</div>
+
+</div>
+
+</body>
+</html>
